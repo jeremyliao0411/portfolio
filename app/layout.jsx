@@ -1,7 +1,7 @@
-import "@fontsource/schibsted-grotesk/400.css";
-import "@fontsource/schibsted-grotesk/500.css";
-import "@fontsource/schibsted-grotesk/700.css";
-import "@fontsource/schibsted-grotesk/800.css";
+import "@fontsource-variable/newsreader";
+import "@fontsource/instrument-sans/400.css";
+import "@fontsource/instrument-sans/500.css";
+import "@fontsource/instrument-sans/600.css";
 import "./globals.css";
 import { profile } from "./content";
 
