@@ -10,7 +10,7 @@ export const profile = {
   resume: "",
   portrait: { src: "/jeremy-portrait.jpg", alt: "Hung-Che (Jeremy) Liao", width: 800, height: 1000 },
   metaDescription:
-    "Hung-Che (Jeremy) Liao turns messy operational data into decisions teams use, from pricing and inventory to factory lead times.",
+    "Hung-Che (Jeremy) Liao turns messy operational data into decisions teams use, from pricing and inventory to capacity planning.",
 };
 
 export const nav = [
@@ -23,15 +23,15 @@ export const nav = [
 export const hero = {
   title: ["Clear thinking.", "Useful decisions.", "People first."],
   lead: ["Operational data is messy.", "The next step doesn’t have to be."],
-  body: "I’m Jeremy. I turn messy operational data into decisions teams actually use, from pricing and inventory to factory lead times.",
+  body: "I’m Jeremy. I turn messy operational data into decisions teams actually use, from pricing and inventory to capacity planning.",
   intent:
     "Finishing my MS in Business Analytics at USC in December 2026. Looking for analyst roles in Taiwan’s tech and manufacturing industries.",
 };
 
 export const credibility = [
   { title: "USC Marshall", note: "MS Business Analytics, completing Dec 2026" },
-  { title: "Ding-go", note: "Built the first pricing and inventory system" },
-  { title: "Gournay Consulting", note: "Salsify implementations for 25+ consumer brands" },
+  { title: "Ding-go", note: "Built the pricing system, still in use after I left" },
+  { title: "Gournay Consulting", note: "Salsify implementations for 30+ consumer brands" },
 ];
 
 export const work = {
@@ -39,29 +39,42 @@ export const work = {
   title: "Selected work.",
   projects: [
     {
+      org: "TSMC capacity",
+      role: "Independent project, public data, 2026",
+      metric: "+5% to +9.5%",
+      metricNote: "capacity to add next year, centered around +7%",
+      title: ["Build too few,", "or build too many."],
+      body: [
+        "TSMC stopped publishing fab utilization after 2020, right when AI demand took off. I rebuilt it from 71 quarterly reports and 20-F filings, checked it against 16 quarters where the real numbers are known (about 2% error), and reported the test it failed.",
+        "Then I measured how much utilization moves gross margin, simulated 10,000 possible demand years, and priced a shortage against idle machines. A lost wafer costs about 5× a year of idle capacity, which puts the cheapest add at about +7%.",
+      ],
+      focus: "Python, regression, Monte Carlo simulation and cost modeling.",
+      link: { label: "Read the full analysis ↗", href: "/tsmc" },
+    },
+    {
       org: "Ding-go",
       role: "Pricing Analyst intern, 2026",
-      metric: "+7.5 pts",
-      metricNote: "gross margin on repriced products",
+      metric: "+4.6 pts",
+      metricNote: "gross margin on 23 products I recommended repricing",
       title: ["The shelf and the price", "tell one story."],
       body: [
         "Products arrived through four supply routes, each with its own freight, duty and handling costs. Nobody knew what a product really cost once it landed, so prices and reorders were set by feel.",
-        "I built the company’s first pricing and inventory system on live store data. I fixed the cost data before touching a single price, then reviewed the catalog for how hard each dollar of inventory was working. Repricing raised gross margin on the affected products by about 7.5 points, a result that held up under significance testing.",
+        "I built a pricing system on live store data. I fixed the cost data before touching a single price, then reviewed the catalog for how hard each dollar of inventory was working. I recommended price increases on 23 products, and gross margin on them rose about 4.6 points, a result that held up under a paired t-test.",
       ],
       focus:
-        "Python, ShopifyQL and Gemini, with a person reviewing uncertain calls. Handed off with an operator manual; sourcing, finance and marketing run it today. Company data is under NDA.",
+        "ShopifyQL, Apps Script, Shopify Admin API and Gemini. Used by sourcing, finance and marketing, and still in use after I left. Company data is under NDA.",
     },
     {
       org: "Gournay Consulting",
-      role: "Digital Implementation Specialist, 2023–2024",
-      metric: "25+",
+      role: "Digital Implementation Analyst, 2023–2024",
+      metric: "30+",
       metricNote: "consumer brands implemented on Salsify",
       title: ["Information needs", "a shared meaning."],
       body: [
         "A product field can be filled in and still be wrong. For consumer brands selling through Walmart, Target and Costco, product data lived in ERP systems, data pools, asset libraries and spreadsheets, and the sources often disagreed.",
-        "I sat with marketing, master data and regulatory teams to agree on what each field meant and who owned it, designed the data model, and checked every retailer channel before launch. A Python pipeline I built for testing is still used company-wide by one client.",
+        "I cleaned and consolidated thousands of product records from 1WorldSync and 10+ client spreadsheets into one Salsify import, with a taxonomy and parent–child hierarchy, then set up validation rules so data was checked against each retailer’s requirements before it went out. The West Madison Foods pipeline I set up was still running a year after I left.",
       ],
-      focus: "Salsify, Python, data modeling and retailer QA.",
+      focus: "Salsify (PXM), GDSN data, data modeling and retailer validation.",
     },
     {
       org: "Baseball payroll",
@@ -75,18 +88,6 @@ export const work = {
       ],
       focus: "Python and statsmodels.",
       link: { label: "Code and data on GitHub ↗", href: "https://github.com/jeremyliao0411/mlb-payroll-wins" },
-    },
-    {
-      org: "Tung Shin Aluminum",
-      role: "Product Operations Specialist, Vietnam, 2024–2025",
-      metric: "71% → 90%",
-      metricNote: "delivery quote accuracy",
-      title: ["A delivery date", "is a promise."],
-      body: [
-        "At an aluminum plant in Vietnam, delivery dates were quoted from experience. When they slipped, the plant paid for rush work or lost a customer’s trust.",
-        "I modeled lead time on three years of order data and replaced single-date guesses with realistic ranges, raising quote accuracy from 71% to 90%. Along the way I found that 18% of volume ran on costlier machines with no difference in quality, which became a plant-wide routing rule.",
-      ],
-      focus: "Python, regression and production data.",
     },
   ],
 };
@@ -106,12 +107,12 @@ export const experience = {
   title: "Different kinds of complexity.",
   areas: [
     { title: "E-commerce", body: "How price, demand and stock pull on each other.", where: "Ding-go, Los Angeles, 2026" },
-    { title: "Manufacturing", body: "Lead times, machine constraints and the promises made to customers.", where: "Tung Shin Aluminum, Ho Chi Minh City, 2024–2025" },
+    { title: "Semiconductors", body: "How utilization, demand and cost decide how much capacity to build.", where: "TSMC capacity project (public data), 2026" },
     { title: "Product data systems", body: "The care it takes to define, validate and pass information between teams.", where: "Gournay Consulting, 2023–2024" },
   ],
   education: [
     "MS Business Analytics, USC Marshall School of Business, Dec 2026",
-    "Undergraduate degree, Penn State University",
+    "BS Marketing, Minor in MIS, Penn State University",
   ],
 };
 
