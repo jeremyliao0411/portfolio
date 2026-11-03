@@ -171,7 +171,7 @@ export const projects = {
   },
   items: [
     {
-      cover: { src: "/tsmc/img/03a_margin_vs_utilization_by_era.png", alt: "Chart: TSMC gross margin against fab utilization, with a higher line for each era", width: 1350, height: 840 },
+      cover: { src: "/tsmc/img/margin-by-era-dark.png", alt: "Chart: TSMC gross margin against fab utilization in three eras; same slope, a higher level in each era, R squared 0.78", width: 1350, height: 1088 },
       title: "How much should TSMC build?",
       meta: "Independent project · public data · 2026",
       problem:
