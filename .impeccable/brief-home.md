@@ -1,3 +1,5 @@
+> ⚠️ 已過時（2026-11-02 晶圓方向被否決）。設計規格以 repo 根目錄的 DESIGN.md 為準。
+
 # Homepage (jeremyliao.vercel.app /)
 
 Scope: the homepage of Jeremy's personal site. Mode: experience (the work leads from the first viewport). Visitor: Taiwan tech/manufacturing recruiter or hiring manager, 1–2 minutes, desktop first, phone from LinkedIn. Action: email or LinkedIn him; secondary: open the TSMC analysis at /tsmc. Memorable moment: the wafer that sorts itself from messy bins into a clean pass map. Jeremy chose this direction on 2026-11-02 (pick card, over the rolled Yellow Room).
