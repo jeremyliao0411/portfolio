@@ -60,6 +60,42 @@ export const home = {
       },
     ],
   },
+  results: {
+    title: "What the work changed",
+    items: [
+      {
+        org: "Ding-go",
+        context: "Pricing Analyst Intern · 2026",
+        parts: ["Recommended price increases on ", "23 products", ". Gross margin went from ", "48.8% to 53.5%", "."],
+        href: "/experience",
+      },
+      {
+        org: "Gournay Consulting",
+        context: "Digital Implementation Analyst · 2023–24",
+        parts: ["Implemented Salsify for ", "30+ consumer brands", ". One pipeline I set up still ran ", "a year after I left", "."],
+        href: "/experience",
+      },
+      {
+        org: "TSMC capacity",
+        context: "Independent project · 2026",
+        parts: ["Rebuilt fab utilization from ", "71 quarterly reports", ". Recommendation: add ", "+5% to +9.5%", " capacity next year."],
+        href: "/tsmc",
+      },
+      {
+        org: "MLB payroll",
+        context: "USC team project, then my re-analysis",
+        parts: ["+10% of league-average payroll buys about ", "+0.72 wins", ", roughly ", "$21.3M per win", "."],
+        href: "/projects",
+      },
+    ],
+  },
+  recognition: {
+    title: "Recognition",
+    items: [
+      { lead: "Semi-finalist", rest: "USC Marshall Global MS Business Analytics AI Case Competition, 2025 · 200+ participants from 20+ countries" },
+      { lead: "Peer Mentor", rest: "Penn State business program, 2022–2023 · 5 mentees" },
+    ],
+  },
   highlights: {
     title: "Highlights",
     items: [
