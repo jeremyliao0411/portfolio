@@ -79,7 +79,7 @@ export const home = {
         org: "MLB payroll",
         context: "USC team project, then my re-analysis",
         parts: ["+10% of league-average payroll buys about ", "+0.72 wins", ", roughly ", "$21.3M per win", "."],
-        href: "/projects",
+        href: "/mlb",
       },
     ],
   },
@@ -181,14 +181,14 @@ export const projects = {
       link: { label: "Read the full analysis", href: "/tsmc", external: false },
     },
     {
-      cover: { src: "/mlb-drivers.png", alt: "Chart: extra wins per one standard deviation of average age, payroll and roster churn", width: 1400, height: 640 },
+      cover: { src: "/mlb/img/payroll-vs-wins-dark.png", alt: "Chart: wins against payroll as a multiple of the league average for 720 MLB team-seasons; the final model's line rises about 0.72 wins per 10 percent more payroll", width: 1271, height: 797 },
       title: "Does payroll buy wins?",
       meta: "USC team project, then my own re-analysis · 2025–2026",
       problem:
         "Our class model said yes, but its strongest predictors, attendance and Manager of the Year votes, partly follow from winning. I rebuilt it on 720 team-seasons with inflation-adjusted payroll.",
       result: "+10% of league-average payroll → +0.72 wins, about $21.3M per win.",
       tags: ["Python", "statsmodels", "Regression"],
-      link: { label: "Code and data on GitHub", href: "https://github.com/jeremyliao0411/mlb-payroll-wins", external: true },
+      link: { label: "Read the full analysis", href: "/mlb", external: false },
     },
   ],
 };
