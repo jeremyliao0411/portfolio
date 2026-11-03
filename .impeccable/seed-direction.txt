@@ -1,0 +1,153 @@
+DIRECTION CONCEPT SEED (key: 476410efce1d62ca685ac1b988d29473; mode: experience; source: api; approved pool: c3b204a1eed6; 306/564 human-approved; rerun with --scope direction --mode experience --from 476410efce1d62ca685ac1b988d29473 --candidate-count 7 to reproduce this roll against this catalog revision)
+ASSIGNED INDEX: 6
+  After ordering the grounded directions by resonance, build candidate
+  6 of your own grounded list; the assignment never points at a
+  challenger. The assignment is the roll, not a suggestion: your top-ranked
+  direction is what every run would ship, so the script decides which grounded
+  direction gets built. Each direction joins a durable visual system to a
+  concrete expression for the requested first surface, decided as one. It must
+  survive the current task plus navigation, quiet and dense content,
+  interaction and state, and a substantially different future surface. In an
+  attended run, present the assigned direction fully committed and offer
+  re-roll. You may add ONE card for your top-ranked grounded candidate when
+  it is not the assigned direction, kicker IMPECCABLE’S PICK, with an honest risk line
+  naming its familiarity; one pick card, never a ranked lineup, and the pick
+  never takes the lead position. When the assignment IS your top candidate,
+  there is no pick card. Re-roll yourself only
+  on named factual grounds, when the assignment cannot carry the product's
+  truth or task; taste is never grounds.
+  The assignment exists to refuse the model's ranking rut, never to outrank
+  the user or the brief. Never expose assignment metadata in user-facing labels.
+CHALLENGERS:
+  1. a home sewing pattern envelope and its tissue, fashion figures in three lettered views on the front, yardage tables on the back, and inside a folded map of dashed cutting lines, notches, grain arrows, and place-on-fold brackets
+     SOURCE ID: fashion-folded-worlds-sewing-pattern-envelope
+     CREATIVE SPARK: You smooth the crackling tissue across the table, third size line from the edge, and pin piece 4 with its grain arrow dead parallel to the fold before the scissors commit you to view B.
+     SYSTEM GRAMMAR:
+       - Palette/material: manila tissue ground with black drafting marks, envelope figures in dry gouache pastels, one dressmaker red tracing the view and size you have committed to
+       - Type/composition: view letters A, B, and C rank the variants, circled piece numbers sit on every tissue shape, instructions run as numbered steps with thumbnail diagrams
+       - Topology/navigation: the envelope front indexes the views, the back holds size and yardage tables, and the cutting layout maps every numbered piece onto the folded yardage
+       - Controls/state: the chosen size renders its nested cut line solid while other sizes stay dashed, notches must meet to join pieces, and a placed piece pins flat and stops drifting
+       - Responsive/motion: the layout refolds to the fabric width at hand, pieces never rotating off grain; motion is tissue settling and a pin dropping home
+     WEB LEVERAGE: css outlines trace nested size grading while drag interaction snaps svg pieces onto a grain-locked layout grid
+     QUALITY BAR: board https://impeccable.style/worlds/cards/fashion-folded-worlds-sewing-pattern-envelope.webp · hero https://impeccable.style/worlds/cards/fashion-folded-worlds-sewing-pattern-envelope-hero.webp
+  2. a daylight section, where the sun cuts luminous rooms through a building and daily life gathers along the moving edge of warmth
+     SOURCE ID: architecture-inhabitable-space-daylight-section
+     CREATIVE SPARK: A winter beam enters beneath a deep lintel, climbs a limewashed wall, and reaches a breakfast table at 08:12 before withdrawing into the stair by noon.
+     SYSTEM GRAMMAR:
+       - Palette/material: limewash white walls as ground, section-cut poche in deep charcoal, the traveling sunbeam's gold as the active band, shadow blue for withdrawn hours
+       - Type/composition: architect's inclined lettering with tabular time stamps, the page ruled as one long continuous section, annotations pinned to sun angles
+       - Topology/navigation: Read rooms in section through solar paths, apertures, surfaces, and moments of occupation.
+       - Controls/state: Change date, orientation, and opening depth while comparing useful light and glare.
+       - Responsive/motion: Stack time slices beneath a fixed section on narrow screens and preserve a still noon state.
+     WEB LEVERAGE: Solar-position computation and a shader-backed section visualize exact daylight paths with numeric lux and glare summaries.
+     QUALITY BAR: board https://impeccable.style/worlds/cards/architecture-inhabitable-space-daylight-section.webp · hero https://impeccable.style/worlds/cards/architecture-inhabitable-space-daylight-section-hero.webp
+  3. an algorave floor, where projected live code edits the music mid-dance and every thrown bracket changes what a hundred bodies do next
+     SOURCE ID: medium-native-algorave-source-floor
+     CREATIVE SPARK: The coder deletes half a line and the kick drops out; the crowd howls, the line comes back wrong on purpose, and the room lifts.
+     SYSTEM GRAMMAR:
+       - Palette/material: phosphor green and magenta syntax on projector black, the code buffer as ground; the pattern about to change flashes amber before it sounds
+       - Type/composition: monospaced terminal type at stage scale with hard line breaks as musical bars, the composition one code buffer whose cursor line is the downbeat
+       - Topology/navigation: the source is the stage; sections of code map to audible layers you can follow live.
+       - Controls/state: edits apply on the next cycle boundary; upcoming changes are visible before they sound.
+       - Responsive/motion: code and visuals share one clock; small screens follow a single highlighted pattern lane.
+     WEB LEVERAGE: Web Audio scheduling ties editable patterns to a shared clock with live evaluation in the page.
+     QUALITY BAR: board https://impeccable.style/worlds/cards/medium-native-algorave-source-floor.webp · hero https://impeccable.style/worlds/cards/medium-native-algorave-source-floor-hero.webp
+  4. a printing darkroom under amber safelight, where enlarger beams, timed baths, and drying lines stage photographs into slow deliberate existence
+     SOURCE ID: signals-instruments-darkroom-safelight-bay
+     CREATIVE SPARK: In the developer tray, gray ghosts gather into a face; the timer ticks, and pulling the print too early is a real loss.
+     SYSTEM GRAMMAR:
+       - Palette/material: amber safelight washing every surface as the ground, wet-print silver grays deepening to black as the image ink, enamel tray white at the edges
+       - Type/composition: grease-pencil notes and printed timer digits under amber, labels sparse on bottles and trays; test strips band the field into stepped exposures
+       - Topology/navigation: work moves through fixed stations in order: compose, expose, develop, fix, wash, dry.
+       - Controls/state: progress is chemical and irreversible past marked points; test strips preview before committing.
+       - Responsive/motion: stations linearize on phones; the develop reveal is one continuous emergence, shown statically under
+     WEB LEVERAGE: Canvas-simulated development curves let previews emerge in real time before an action commits.
+     QUALITY BAR: board https://impeccable.style/worlds/cards/signals-instruments-darkroom-safelight-bay.webp · hero https://impeccable.style/worlds/cards/signals-instruments-darkroom-safelight-bay-hero.webp
+  5. a saturday-morning cartoon title card, chunky outlined logotype on a starburst, the character lockup frozen mid-leap, taped-off-air VHS patina over theme-song energy
+     SOURCE ID: pop-culture-shelf-saturday-title-card
+     CREATIVE SPARK: You sit cross-legged on the carpet at 7 a.m., cereal going soft, when the starburst card slams in with the theme song and the tracking wobbles because this tape has been recorded over twice.
+     SYSTEM GRAMMAR:
+       - Palette/material: cel-paint primaries, sunshine yellow rays over sky cyan, thick black outlines as body ink, VHS chroma bleed softening the active card's edges
+       - Type/composition: a chunky outlined logotype bowed across the card's center, episode titles in brush caps on a lower third, everything locked to the starburst's hub
+       - Topology/navigation: one card per segment; bumper cards announce every transition, the starburst hub is where the eye lands and the next card wipes in from black
+       - Controls/state: play tracks like a VHS head, pausing tears the frame into static bands, the selected card leaps its character lockup one cel higher
+       - Responsive/motion: the starburst crops to a vertical wedge on phones with the logotype re-bowed; rays spin slowly behind the lockup
+     WEB LEVERAGE: svg starburst rays rotate with css animation; svg filters add VHS tracking noise, disabled under reduced motion
+     QUALITY BAR: board https://impeccable.style/worlds/cards/pop-culture-shelf-saturday-title-card.webp · hero https://impeccable.style/worlds/cards/pop-culture-shelf-saturday-title-card-hero.webp
+  6. a hand-lettered record sleeve, where a beaming bandleader portrait floats in tropical color under an exuberant painted band name
+     SOURCE ID: highlife-sleeve
+     CREATIVE SPARK: A bandleader grins from a cut-out portrait against a wall of mango orange and palm green. The band name arcs overhead in fat hand-brushed letters, each one outlined twice, drop-shadowed once, and packed cheek to cheek.
+     SYSTEM GRAMMAR:
+       - Palette/material: Saturated tropical color, mango, palm green, sky, and hibiscus red, on warm cream board
+       - Type/composition: Exuberant hand-brushed display lettering, double-outlined and shadowed, arcing across the top; a smaller sans for track lists below
+       - Topology/navigation: Move by release title, by bandleader portrait, and by side and track.
+       - Controls/state: Flip, cue, and credit; selecting a track brightens its row and lifts the sleeve portrait forward over its color field.
+       - Responsive/motion: The arced title reflows to a straight stacked banner on narrow screens; reduced-motion swaps sleeves with a plain cross-fade.
+     WEB LEVERAGE: Set the arced band name on an SVG textPath and layer double outlines with paint-order stroke, so the hand-lettered headline stays crisp at any size.
+     QUALITY BAR: board https://impeccable.style/worlds/cards/highlife-sleeve.webp · hero https://impeccable.style/worlds/cards/highlife-sleeve-hero.webp
+Fuse each challenger before judging it: the challenger supplies the form
+  and its system grammar, the product supplies every fact, and clarity wins
+  conflicts. Weigh the fused result against the assigned direction on exactly
+  two axes, audience identification and product clarity. Losing to strong
+  grounded material is a valid outcome; beating a thin or tool-monoculture
+  list is the point. A fused challenger that wins both axes becomes the build.
+  Close the weighing with a verdict per challenger, decided before any
+  borrowing is considered: wins (beats the assigned direction on both axes),
+  competitive (holds one axis), or declined (loses both). A declined
+  challenger is not spent: name the one discipline of its system the assigned
+  direction lacks, and raise the assigned direction to match before
+  presenting it. A donation transfers ambition and system discipline, never
+  the challenger's clothes. A component treatment, such as a button's shadow
+  or a display face, is clothes, not discipline; one world owns the page.
+  Write each raise as its own named line on the presented direction, and
+  carry every verdict, kept line, and raise into the decision page payload.
+When you can view images, open the QUALITY BAR board and hero for any
+challenger you weigh seriously and for the world you build. They exist as a
+craft bar, the finish level and commitment the build is expected to reach,
+never as a mockup to copy; your surface serves this product, not that render.
+PRODUCT.md and explicit incumbent brand commitments constrain every direction.
+The seed never chooses exact colors, fonts, tokens, or a user preference, and
+it never permits the world and first surface to be selected independently.
+The CREATIVE SPARK is a complete visual system, not a theme or decorative
+reference. Translate every supplied system rule into the product: palette and
+material, type and composition, topology, controls and states, and adaptation.
+Keep the source's visible character, scale, rhythm, and interaction instead of
+reducing vivid grammar to generic nouns. Keep a literal carrier only when it
+becomes functional.
+Ambitious motion, spatial media, or interaction is welcome when it strengthens
+the product without weakening semantics, performance, or fallback behavior.
+MODE RULES (experience, from /Users/jliao/.claude/skills/impeccable/reference/mode-persuade.md). They govern this surface's directions and every comp you write or judge for it, the decision comps included; where shared guidance conflicts, these win.
+DIRECTIONS
+When a catalog world's source is itself an interface language, the surface may carry its native grammar across navigation, content, controls, and states, within the platform conventions a native app keeps.
+
+For **Persuade**, the opening must make the offer intelligible and desirable, expose a clear action, and demonstrate something only this product can prove. The action is the one the category's visitors came to take, in its working form: an airline's route-and-dates search, a clinic's open appointment slots, a store's add to cart. A decorative link pointing at it elsewhere does not count. Conversion lives inside the form's own vocabulary: a hook that lands in one line, a visible primary action, a legible reading order. A committed form that hides the offer or the action has not finished translating. For **Experience**, the work itself leads from the first viewport.
+COMPS
+The world may be the carrier of the page, never a picture of it: a facade, a shutter or a book can be what the page is built on, while a viewport painted whole as a facade, a book cover or a travel poster, with no working parts in it, is a picture of the world, not its website. Material coverage is wanted: the world's material is the ground and the major surfaces, its type sets the headlines, and a world reduced to an accent on a neutral template is the category default with a sticker on it. Coverage is not performance: how many regions act out the concept is limited by the depth rule in visualize.md, and the rest stay in the world's material without performing it. Both ends erase the direction: the painted poster, and the generic product page (a headline over subcopy and a button, a row of equal cards below). The dealt composition sets the skeleton, and the compositions you write for comps two and three answer to the same test: a split hero (copy on one side, the product on the other, a badge row under it) or a centred headline over a row of cards is the template whatever world paints it.
+
+The world carries the page's parts and never absorbs them, so wherever it puts one, the page still works as a page: navigation set into a facade reads as links, copy on a shutter as set text a visitor reads, an action on a door plaque as plainly clickable, text reads against whatever sits behind it, the sections keep a steady vertical rhythm, the primary action is unmistakable, and the section below starts as a section rather than more painting. Fix a poster by making its parts work where the world put them, never by moving them into a standard layout on the world's colour: a cover that becomes copy beside a device on marigold has lost the cover.
+
+When the world is an object, the page is that one object seen once, at one scale and from one point of view, and the object keeps its real form: a book opens to two pages on one gutter, never a third panel, and a spine that carries the navigation belongs to the book on the page, never a second book beside it. More content goes on the object's own surfaces or on the next spread below, never on extra copies or impossible folds.
+
+Comps two and three each go further than the first, never cleaner: a bolder use of the same world, where the world's material carries more of the page's structure (still one dominant move, per the depth rule), a larger or stranger focal move, or a composition the category would not attempt.
+TELEMETRY: once the round resolves, rerun this script once with
+  --from 476410efce1d62ca685ac1b988d29473 --scope direction --mode experience plus what the user did:
+  - chose a card: --kind <assigned|pick|challenger|grounded|canon>, the kind the
+    card declares, adding --chosen <SOURCE ID> when a dealt challenger won (its
+    catalogId, never your card's id) and keeping --register <safer|bolder>
+    when the round came from a steered hand;
+  - asked for another hand instead of choosing: --kind reroll, adding
+    --register <safer|bolder> when they steered it.
+  One ping per attended round the user resolved; when the decision page
+  already sent it, the rerun prints `choice already recorded`. The ping is anonymous, the card kind plus the catalog id when one
+  won; your grounded candidates' names never leave the machine, and the ping
+  is skipped automatically when DO_NOT_TRACK or IMPECCABLE_NO_TELEMETRY is set.
+A user- or brief-pinned decision beats the roll, always.
+ASSIGNED INDEX (restated for truncated readers): 6. Build candidate
+6 of your own grounded list; seed key 476410efce1d62ca685ac1b988d29473.
+SEED REFERENCE: seed:04e255ac4b82890c. Write this, never the key, wherever the seed is recorded (the surface brief's FORM line, build-phase start --direction); on this machine --from accepts it in place of the key.
+PRESENTATION (the decision round, condensed from new-work.md; follow it even when your read of that file came back cut):
+- Present this hand on the decision page: write the options payload (`/Users/jliao/.claude/skills/impeccable/scripts/impeccable serve-question --schema` prints its shape), run `/Users/jliao/.claude/skills/impeccable/scripts/impeccable serve-question --start --payload <file>`, and open the URL it prints for the user.
+- With image generation, every card declares a comp under .impeccable/mocks/decision/, canon included, declined challengers excepted. Serve first, then generate each comp in reading order (assigned, pick, full-card hand, canon), writing its prompt sidecar as it lands (a.png gets a.png.json).
+- After the last comp or sketch lands (at once when this round makes none), hold `/Users/jliao/.claude/skills/impeccable/scripts/impeccable serve-question --wait --key <key>`. If your shell hands back a session before --wait exits, keep polling that session until it exits; rerun --wait only after it exits 3 with no answer.
+- Build path: none recorded in .impeccable/config.json or .impeccable/config.local.json, so comp-led whenever image generation exists. Then put "buildPath": {"value": "comp", "toggle": true} in the payload; without image generation there is no toggle and the build is code-led. Never ask about the build path during the round; only when the ANSWER returns buildPathFlipped: true, offer once afterwards to keep the flipped value as the default.
+- The structured question tool is the fallback, never the first channel: take it when --start exits 2, when --wait exits 4 after the page closed unanswered, or when your harness cannot hold a blocking --wait at all (say so in your first reply). It carries the same options and asks nothing about the build path.

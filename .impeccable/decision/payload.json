@@ -1,0 +1,241 @@
+{
+ "title": "作品集網站：選視覺世界",
+ "question": "抽到「黃光室」。留下它、換成我的推薦，或重抽。",
+ "options": [
+  {
+   "id": "assigned",
+   "kind": "assigned",
+   "label": "黃光室 Yellow Room",
+   "kicker": "THE ROLL",
+   "lineage": "晶圓廠微影區的黃光室",
+   "thesis": "每個專案是一批 lot，走完檢驗站，最後蓋上一個決策章。",
+   "palette": [
+    "#f2c230",
+    "#1b1a17",
+    "#f7f4ea",
+    "#d7261e",
+    "#c9cccf"
+   ],
+   "materials": [
+    "黃光濾光",
+    "不鏽鋼打孔板",
+    "lot traveler 流程卡"
+   ],
+   "viewport": "整片亮黃底，左邊大標「I turn messy data into decisions.」，右邊一張流程卡列出 4 個專案和各自的結果章。",
+   "risk": "整頁黃色讀久會累；做過頭會變成角色扮演（costume）。",
+   "raised": [
+    {
+     "from": "fashion-folded-worlds-sewing-pattern-envelope",
+     "raise": "選定的決策畫實線，其他被比較過的選項畫虛線（例如 +7% 實線、0% 和 +12% 虛線）。"
+    },
+    {
+     "from": "signals-instruments-darkroom-safelight-bay",
+     "raise": "72.5% 的方向測試做成一條「試片」：先定好 80% 門檻，結果直接攤開。"
+    },
+    {
+     "from": "architecture-inhabitable-space-daylight-section",
+     "raise": "整頁是一條連續的流程線，不是一格一格的卡片。"
+    },
+    {
+     "from": "highlife-sleeve",
+     "raise": "顏色整片承擔版面（黃底覆蓋大部分畫面），不是點綴。"
+    },
+    {
+     "from": "pop-culture-shelf-saturday-title-card",
+     "raise": "每個專案前有一條過站帶，宣告下一批 lot 進站。"
+    },
+    {
+     "from": "medium-native-algorave-source-floor",
+     "raise": "結果章落下前，先讓讀者看到它要蓋在哪一格。"
+    }
+   ],
+   "html": ".impeccable/decision/yellow-room.html"
+  },
+  {
+   "id": "model-pick",
+   "kind": "pick",
+   "label": "晶圓圖 Wafer Map",
+   "kicker": "IMPECCABLE’S PICK",
+   "lineage": "良率檢測的 wafer map",
+   "thesis": "一開始滿是紅黃綠的亂點，捲動時收斂成一張乾淨的良率圖：亂資料變決策。",
+   "palette": [
+    "#f6f7f4",
+    "#13201b",
+    "#2f9e6a",
+    "#e7b52c",
+    "#d6453a"
+   ],
+   "materials": [
+    "晶圓格點",
+    "檢測色碼"
+   ],
+   "viewport": "左邊大標，右邊一片圓形晶圓格點，每個區塊是一個專案。",
+   "risk": "這是我心中第一名，也最接近大家都會做的「數據感」網站；容易被看成工程師作品集。",
+   "html": ".impeccable/decision/wafer-map.html"
+  },
+  {
+   "id": "c-sewing",
+   "kind": "challenger",
+   "catalogId": "fashion-folded-worlds-sewing-pattern-envelope",
+   "label": "紙型信封",
+   "verdict": "declined",
+   "lineage": "家用裁縫紙型",
+   "thesis": "專案是 A/B/C 三種版型。",
+   "palette": [
+    "#e9dcc0",
+    "#1a1a1a",
+    "#c0392b"
+   ],
+   "materials": [
+    "描圖紙",
+    "虛線裁切"
+   ],
+   "viewport": "信封正面列出版型。",
+   "risk": "招募的人對裁縫沒有共鳴。",
+   "case": "兩個軸都輸：認同感、清楚度。",
+   "kept": "選定的實線、其他選項虛線。"
+  },
+  {
+   "id": "c-daylight",
+   "kind": "challenger",
+   "catalogId": "architecture-inhabitable-space-daylight-section",
+   "label": "日光剖面",
+   "verdict": "declined",
+   "lineage": "建築剖面圖",
+   "thesis": "陽光掃過建築的一天。",
+   "palette": [
+    "#f4f1ea",
+    "#2b2b2b",
+    "#e8b64c",
+    "#5a7aa0"
+   ],
+   "materials": [
+    "石灰牆",
+    "剖面線"
+   ],
+   "viewport": "一條長剖面。",
+   "risk": "跟分析工作沒有連結。",
+   "case": "兩個軸都輸。",
+   "kept": "整頁一條連續的線。"
+  },
+  {
+   "id": "c-algorave",
+   "kind": "challenger",
+   "catalogId": "medium-native-algorave-source-floor",
+   "label": "現場寫程式派對",
+   "verdict": "declined",
+   "lineage": "algorave",
+   "thesis": "程式碼就是舞台。",
+   "palette": [
+    "#000000",
+    "#39ff14",
+    "#ff00aa",
+    "#ffb000"
+   ],
+   "materials": [
+    "投影黑底",
+    "等寬字"
+   ],
+   "viewport": "黑底程式碼。",
+   "risk": "你明確說不要工程師作品集的感覺。",
+   "case": "兩個軸都輸。",
+   "kept": "變化發生前先讓人看到。"
+  },
+  {
+   "id": "c-darkroom",
+   "kind": "challenger",
+   "catalogId": "signals-instruments-darkroom-safelight-bay",
+   "label": "暗房安全燈",
+   "verdict": "declined",
+   "lineage": "沖印暗房",
+   "thesis": "照片在藥水裡慢慢浮現。",
+   "palette": [
+    "#b5651d",
+    "#1c1c1c",
+    "#f2efe8"
+   ],
+   "materials": [
+    "琥珀燈",
+    "試片"
+   ],
+   "viewport": "琥珀色工作站。",
+   "risk": "跟黃光室同一個材質家族，但台灣科技業的人更熟黃光室。",
+   "case": "兩個軸都輸給黃光室。",
+   "kept": "試片：先預覽、再承諾。"
+  },
+  {
+   "id": "c-cartoon",
+   "kind": "challenger",
+   "catalogId": "pop-culture-shelf-saturday-title-card",
+   "label": "週六卡通片頭",
+   "verdict": "declined",
+   "lineage": "卡通片頭卡",
+   "thesis": "每段一張片頭卡。",
+   "palette": [
+    "#ffd400",
+    "#00b7eb",
+    "#e10600",
+    "#111111"
+   ],
+   "materials": [
+    "粗黑框",
+    "VHS 雜訊"
+   ],
+   "viewport": "放射狀星芒片頭。",
+   "risk": "太吵，你說不要。",
+   "case": "兩個軸都輸。",
+   "kept": "每段前的過站帶。"
+  },
+  {
+   "id": "c-highlife",
+   "kind": "challenger",
+   "catalogId": "highlife-sleeve",
+   "label": "手繪唱片封套",
+   "verdict": "declined",
+   "lineage": "西非 highlife 唱片",
+   "thesis": "人像浮在熱帶色塊上。",
+   "palette": [
+    "#f28c28",
+    "#2e8b57",
+    "#87ceeb",
+    "#d62828",
+    "#f3ead8"
+   ],
+   "materials": [
+    "手繪字",
+    "彩色色塊"
+   ],
+   "viewport": "人像＋弧形大字。",
+   "risk": "熱鬧，但跟台灣科技業無關。",
+   "case": "兩個軸都輸。",
+   "kept": "顏色整片承擔版面。"
+  }
+ ],
+ "reroll": {
+  "registers": [
+   "safer",
+   "bolder"
+  ]
+ },
+ "buildPath": {
+  "value": "code"
+ },
+ "canon": true,
+ "canonCard": {
+  "kind": "canon",
+  "label": "一般分析師作品集",
+  "thesis": "白底、照片、專案卡片，做到最好。",
+  "palette": [
+   "#ffffff",
+   "#111827",
+   "#2563eb"
+  ],
+  "materials": [
+   "乾淨格線",
+   "大頭照"
+  ],
+  "viewport": "大家預期的排法。",
+  "risk": "跟其他應徵者看起來一樣。"
+ },
+ "steer": true
+}

@@ -1,0 +1,104 @@
+{
+ "schemaVersion": 2,
+ "generatedAt": "2026-11-02T17:50:18.574141-08:00",
+ "title": "Design System: Jeremy Liao — personal site",
+ "extensions": {
+  "colorMeta": {
+   "ground": {
+    "role": "neutral",
+    "displayName": "Silicon Grey"
+   },
+   "ink": {
+    "role": "primary",
+    "displayName": "Ink Navy"
+   },
+   "fail": {
+    "role": "semantic",
+    "displayName": "Fail Bin"
+   },
+   "marginal": {
+    "role": "semantic",
+    "displayName": "Marginal Bin"
+   },
+   "pass": {
+    "role": "semantic",
+    "displayName": "Pass Bin"
+   }
+  },
+  "typographyMeta": {
+   "display": {
+    "displayName": "Display",
+    "purpose": "Hero and contact headlines."
+   },
+   "body": {
+    "displayName": "Body",
+    "purpose": "All reading text, tabular figures."
+   }
+  },
+  "shadows": [
+   {
+    "name": "lift",
+    "value": "0 8px 18px -10px rgba(16,35,49,.55)",
+    "purpose": "Button hover only."
+   }
+  ],
+  "motion": [
+   {
+    "name": "ease-out-expo",
+    "value": "cubic-bezier(.16,1,.3,1)",
+    "purpose": "Wafer sort wave and button hover."
+   },
+   {
+    "name": "wafer-sort",
+    "value": "fill .55s, delay = (R - distance) x 2.6ms",
+    "purpose": "The page's one authored motion."
+   }
+  ],
+  "breakpoints": [
+   {
+    "name": "stack",
+    "value": "920px"
+   }
+  ]
+ },
+ "components": [
+  {
+   "name": "Primary Button",
+   "kind": "button",
+   "refersTo": "button-primary",
+   "description": "Main action (Email me).",
+   "html": "<a class=\"ds-btn\">Email me</a>",
+   "css": ".ds-btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:8px;background:#102331;color:#fff;font:700 17px 'Atkinson Hyperlegible Next',sans-serif;text-decoration:none}.ds-btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px -10px rgba(16,35,49,.55)}"
+  },
+  {
+   "name": "Bin Row",
+   "kind": "custom",
+   "refersTo": "inspection-report",
+   "description": "One row of a project's inspection report.",
+   "html": "<div class=\"ds-bin\"><b>Result</b><p>Gross margin rose from 48.8% to 53.5%.</p></div>",
+   "css": ".ds-bin{display:grid;grid-template-columns:132px 1fr;gap:24px;padding:22px 0;border-top:1px solid #c8d1d9;font:400 18px/1.6 'Atkinson Hyperlegible Next',sans-serif;color:#102331}.ds-bin b{color:#1a7349}.ds-bin b::before{content:'';display:inline-block;width:12px;height:12px;border-radius:2px;background:#23955f;margin-right:10px}.ds-bin p{margin:0}"
+  }
+ ],
+ "narrative": {
+  "northStar": "The Wafer Inspection Map",
+  "overview": "Data arrives as fail, marginal and pass bins and resolves into a decision. Projects read as inspection reports.",
+  "keyCharacteristics": [
+   "Silicon-grey ground, ink type",
+   "Colour is data (bin codes)",
+   "One authored motion: the wafer sort"
+  ],
+  "rules": [
+   {
+    "name": "The Bin Rule",
+    "body": "Bin colours only mean fail, marginal or pass.",
+    "section": "colors"
+   }
+  ],
+  "dos": [
+   "Draw figures only from verified numbers"
+  ],
+  "donts": [
+   "No eyebrows, gradient text, stat rows or icon-card grids"
+  ]
+ }
+}

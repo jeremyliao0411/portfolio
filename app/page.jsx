@@ -1,133 +1,74 @@
-import { profile, nav, hero, credibility, work, story, experience, contact, footer } from "./content";
+import Image from "next/image";
+import Link from "next/link";
+import { home, logos, profile } from "./content";
+import Banner from "./components/Banner";
+import Reveal from "./components/Reveal";
 
-function Lines({ lines }) {
-  return lines.map((l, i) => (
-    <span key={i}>
-      {l}
-      {i < lines.length - 1 && <br />}
-    </span>
-  ));
-}
-
-function ContactLinks() {
-  return (
-    <div className="contact-links" aria-label="Contact">
-      <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-      <a href={`mailto:${profile.email}`}>Email ↗</a>
-      {profile.resume && <a href={profile.resume} target="_blank" rel="noopener noreferrer">Resume ↗</a>}
-    </div>
-  );
-}
+const STRIP = ["dinggo", "gournay", "usc", "psu"];
 
 export default function Home() {
   return (
     <>
-      <header className="container header">
-        <div className="identity">
-          <strong>{profile.name}</strong>
-          <span>{profile.fullName}</span>
+      <section className="container hero">
+        <div className="hero-copy">
+          <h1>{home.hello}</h1>
+          <p className="hero-line">{home.line}</p>
+          <p className="hero-sub">{home.sub}</p>
+          <div className="actions">
+            <Link href="/experience" className="btn btn-primary">See my experience</Link>
+            <a href={`mailto:${profile.email}`} className="btn btn-ghost">Email me</a>
+          </div>
         </div>
-        <nav aria-label="Homepage sections">
-          {nav.map((n) => <a key={n.href} href={n.href}>{n.label}</a>)}
-        </nav>
-      </header>
+        <div className="hero-photo">
+          <Image src={profile.portrait.src} alt={profile.portrait.alt} width={profile.portrait.width} height={profile.portrait.height} priority sizes="(max-width: 860px) 70vw, 380px" />
+        </div>
+      </section>
 
-      <main>
-        <section id="intro" className="container hero" aria-labelledby="intro-title">
-          <div className="hero-copy">
-            <h1 id="intro-title"><Lines lines={hero.title} /></h1>
-            <p><Lines lines={hero.lead} /></p>
-            <p>{hero.body}</p>
-            <p className="intent">{hero.intent}</p>
-            <ContactLinks />
-          </div>
-          <figure className="portrait">
-            <img src={profile.portrait.src} alt={profile.portrait.alt} width={profile.portrait.width} height={profile.portrait.height} />
-            <figcaption>{profile.fullName}</figcaption>
-          </figure>
-        </section>
-
-        <aside className="container credibility" aria-label="Education and experience highlights">
-          {credibility.map((c) => (
-            <div key={c.title}>
-              <p>{c.title}</p>
-              <small>{c.note}</small>
-            </div>
-          ))}
-        </aside>
-
-        <section id="work" className="container chapter" aria-labelledby="work-title">
-          <div className="section-intro">
-            <p className="eyebrow">{work.eyebrow}</p>
-            <h2 id="work-title">{work.title}</h2>
-          </div>
-          <div className="projects">
-            {work.projects.map((p) => (
-              <article className="project" key={p.org}>
-                <div className="project-context">
-                  <p>{p.org}</p>
-                  <small>{p.role}</small>
-                  <span className="metric">{p.metric}</span>
-                  <small className="metric-note">{p.metricNote}</small>
-                </div>
-                <div className="reading">
-                  <h3>
-                    {p.title[0]}<br className="desktop-break" /> {p.title[1]}
-                  </h3>
-                  {p.body.map((t, i) => <p key={i}>{t}</p>)}
-                  <p className="focus">
-                    {p.focus}
-                    {p.link && <> <a href={p.link.href} target="_blank" rel="noopener noreferrer">{p.link.label}</a></>}
-                  </p>
-                </div>
-              </article>
+      <section className="logo-strip" aria-label={home.logoStrip}>
+        <div className="container">
+          <p className="strip-label">{home.logoStrip}</p>
+          <ul>
+            {STRIP.map((k) => (
+              <li key={k}><img src={logos[k].src} alt={logos[k].alt} className={`logo logo-${k}`} /></li>
             ))}
-          </div>
-        </section>
+          </ul>
+        </div>
+      </section>
 
-        <section id="story" className="container chapter" aria-labelledby="story-title">
-          <div className="section-intro">
-            <p className="eyebrow">{story.eyebrow}</p>
-            <h2 id="story-title"><Lines lines={story.title} /></h2>
-          </div>
-          <div className="offset reading">
-            {story.body.map((t, i) => <p key={i}>{t}</p>)}
-            <p className="principle">{story.principle}</p>
-          </div>
-        </section>
+      <section className="container section">
+        <h2 className="section-title">{home.explore.title}</h2>
+        <div className="explore">
+          {home.explore.cards.map((c, i) => (
+            <Reveal key={c.href} delay={i * 90}>
+              <Link href={c.href} className="explore-card">
+                <span className="explore-body">
+                  <strong>{c.title} <span aria-hidden="true">→</span></strong>
+                  <span>{c.line}</span>
+                  <small>{c.meta}</small>
+                </span>
+              </Link>
+            </Reveal>
+          ))}
+        </div>
+      </section>
 
-        <section id="experience" className="container chapter" aria-labelledby="experience-title">
-          <div className="offset">
-            <div className="section-intro">
-              <p className="eyebrow">{experience.eyebrow}</p>
-              <h2 id="experience-title">{experience.title}</h2>
-            </div>
-            <div className="industries">
-              {experience.areas.map((a) => (
-                <div key={a.title}>
-                  <h3>{a.title}</h3>
-                  <p>{a.body}</p>
-                  <small className="where">{a.where}</small>
-                </div>
-              ))}
-            </div>
-            <div className="education">
-              {experience.education.map((e) => <p key={e}>{e}</p>)}
-            </div>
-          </div>
-        </section>
+      <section className="section section-soft">
+        <div className="container">
+        <h2 className="section-title">{home.highlights.title}</h2>
+        <ul className="highlights">
+          {home.highlights.items.map((h, i) => (
+            <Reveal as="li" key={h.lead} delay={i * 70}>
+              <strong>{h.lead}</strong>
+              <span>{h.rest}</span>
+            </Reveal>
+          ))}
+        </ul>
+        </div>
+      </section>
 
-        <section id="contact" className="container chapter contact" aria-labelledby="contact-title">
-          <h2 id="contact-title">{contact.title}</h2>
-          <p className="reading">{contact.body}</p>
-          <ContactLinks />
-        </section>
-      </main>
-
-      <footer className="container footer">
-        <span>{profile.fullName}</span>
-        <span>{footer.tagline}</span>
-      </footer>
+      <Banner size="closing" title={home.closing.title} sub={home.closing.body}>
+        <Link href={home.closing.cta.href} className="btn btn-light">{home.closing.cta.label}</Link>
+      </Banner>
     </>
   );
 }
