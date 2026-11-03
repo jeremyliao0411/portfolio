@@ -3,6 +3,7 @@
 最後更新：2026-11-03（PST）
 範本：`/tsmc`（live：https://jeremyliao.vercel.app/tsmc，commit 92f05d7）
 原始檔：`~/Desktop/Project 2/notebooks/builders/tsmc-scrolly/template.html` + `data.json`
+第二個專案：`/mlb`（commit 913db0c），原始檔 `~/Developer/portfolio-builders/mlb-scrolly/`（`build_data.py` → `data.json`；`head.css.part` + `body.part` + 推圖 script → `template.html`）。之後的專案原始檔也放 `~/Developer/portfolio-builders/<專案>/`，不要放進公開的分析 repo。
 
 這份是**第一版就能用的規格**。換一個專案（MLB、之後的任何分析）時，照這份做：換內容、換資料，**版面、字體、顏色、動態、測試方法都不改**。
 
@@ -135,6 +136,15 @@
 
 變成「現在」的那段加 `.is-active`，然後依照 `data-chart` / `data-state` 換圖。
 
+### 5.1b 直接跳到某個位置（End 鍵、往回捲到底、重新整理）
+
+IntersectionObserver 只在「穿過中線」時觸發；一次跳很遠（End 鍵、重新整理停在頁中間）時，中線上可能沒有任何一段，圖會停在第一個狀態（11/3 MLB 頁反向測試抓到）。修法（在 `/mlb` 的 activation IIFE 裡）：
+
+- 開頁時先找「頂部在畫面一半以上的最後一段」當起始狀態。
+- `load` 和 `scrollend` 時跑一次 `sync()`（不支援 `scrollend` 就用 scroll + 160ms debounce）：有 moment 在畫面上就跳過；不然把「頂部在 50%（手機 80%）以上的最後一段」交給 `__lead`。
+
+新專案從 `/mlb` 的 `body.part` 複製這段。
+
 ### 5.2 moment 經過時，圖要被「推走」，不是被「藏起來」
 
 舊做法（藏起來）會出現「moment 過了，圖區一片空白」的問題（11/3 Jeremy 抓到）。現在的做法：
@@ -239,7 +249,7 @@
 - [ ] 故事照第 1 節的 7 步排好，標出 2 個轉折點 → 2 個 moment
 - [ ] 數字全部對過 resume facts
 - [ ] 每一段 step 對應一個圖的狀態（先列表，再寫程式）
-- [ ] 複製 TSMC 的 template，只換內容、資料、圖的程式
+- [ ] 複製 `/mlb` 的 builder（已含 5.1b 的修正），只換內容、資料、圖的程式
 - [ ] 圖過 dataviz 的檢查（顏色、圖例、單一 y 軸）
 - [ ] 第 10 節的測試：桌機 + 手機、正向 + 反向
 - [ ] 深色封面圖
