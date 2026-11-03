@@ -1,5 +1,5 @@
 import { contact as c, profile } from "../content";
-import Banner from "../components/Banner";
+import PageHead from "../components/PageHead";
 import Reveal from "../components/Reveal";
 
 export const metadata = { title: "Contact" };
@@ -12,25 +12,27 @@ const ways = [
 
 export default function Contact() {
   return (
-    <>
-      <Banner as="h1" photo={c.banner.photo} title={c.banner.title} sub={c.banner.sub} />
-      <section className="container section contact">
-        <div className="contact-copy">
-          <h2 className="section-title">{c.title}</h2>
-          <p>{c.body}</p>
-        </div>
-        <ul className="ways">
+    <div className="ph">
+      <PageHead title={c.title} sub={c.body} />
+      <section className="container pp-first pp-contact">
+        <ul className="ph-results">
           {ways.map((w, i) => (
             <Reveal as="li" key={w.k} delay={i * 80}>
-              <a className="way card" href={w.href} {...(w.ext ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
-                <strong>{w.k} <span aria-hidden="true">{w.ext ? "↗" : "→"}</span></strong>
-                <span className="way-v">{w.v}</span>
-                <small>{w.note}</small>
+              <a className="ph-row" href={w.href} {...(w.ext ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
+                <span className="ph-row-org">
+                  <strong>{w.k}</strong>
+                  <span>{w.note}</span>
+                </span>
+                <span className="ph-row-text"><b>{w.v}</b></span>
+                <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" className="arrow">
+                  <path d={w.ext ? "M6 14 14 6M7.5 6H14v6.5" : "M4 10h11M11 5.5 15.5 10 11 14.5"} fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
               </a>
             </Reveal>
           ))}
         </ul>
+        <p className="pp-where">{c.banner.sub}</p>
       </section>
-    </>
+    </div>
   );
 }

@@ -1,13 +1,13 @@
-import Link from "next/link";
 import { experience as ex, logos } from "../content";
-import Banner from "../components/Banner";
+import PageHead from "../components/PageHead";
+import NextRow from "../components/NextRow";
 import Reveal from "../components/Reveal";
 
 export const metadata = { title: "Experience" };
 
 function Logo({ k }) {
   return (
-    <div className="logo-box">
+    <div className="pp-logo">
       <img src={logos[k].src} alt={logos[k].alt} className={`logo logo-${k}`} />
     </div>
   );
@@ -15,65 +15,53 @@ function Logo({ k }) {
 
 export default function Experience() {
   return (
-    <>
-      <Banner as="h1" photo={ex.banner.photo} title={ex.banner.title} sub={ex.banner.sub} />
+    <div className="ph">
+      <PageHead title={ex.banner.title} sub={ex.banner.sub} />
 
-      <section className="container section">
-        <h2 className="section-title">{ex.workTitle}</h2>
-        <div className="stack">
+      <section className="container ph-section pp-first">
+        <h2 className="ph-h2">{ex.workTitle}</h2>
+        <div className="pp-jobs">
           {ex.jobs.map((j) => (
-            <Reveal as="article" className="job card" key={j.org}>
-              <Logo k={j.logo} />
-              <div className="job-body">
-                <header className="job-head">
-                  <div>
-                    <h3>{j.role}</h3>
-                    <p className="org">{j.org} · {j.where}</p>
-                  </div>
-                  <p className="when">{j.when}</p>
-                </header>
-                <div className="pdr">
-                  <div>
-                    <h4>Problem</h4>
-                    <p>{j.problem}</p>
-                  </div>
-                  <div>
-                    <h4>What I did</h4>
-                    <ul>{j.did.map((d) => <li key={d}>{d}</li>)}</ul>
-                  </div>
-                  <div className="result">
-                    <h4>Result</h4>
-                    <p>{j.result}</p>
-                  </div>
+            <Reveal as="article" className="pp-job" key={j.org}>
+              <header className="pp-job-side">
+                <Logo k={j.logo} />
+                <h3>{j.role}</h3>
+                <p>{j.org}</p>
+                <p className="pp-muted">{j.where}</p>
+                <p className="pp-muted">{j.when}</p>
+              </header>
+              <div className="pp-job-body">
+                <p className="pp-lead">{j.problem}</p>
+                <h4>What I did</h4>
+                <ul className="pp-list">{j.did.map((d) => <li key={d}>{d}</li>)}</ul>
+                <div className="pp-result">
+                  <h4>Result</h4>
+                  <p>{j.result}</p>
                 </div>
-                <ul className="tags" aria-label="Tools">{j.tags.map((t) => <li key={t}>{t}</li>)}</ul>
+                <ul className="pp-tags" aria-label="Tools">{j.tags.map((t) => <li key={t}>{t}</li>)}</ul>
               </div>
             </Reveal>
           ))}
         </div>
       </section>
 
-      <section className="section-soft">
-        <div className="container section">
-          <h2 className="section-title">{ex.educationTitle}</h2>
-          <div className="schools">
-            {ex.schools.map((s, i) => (
-              <Reveal as="article" className="school card" key={s.school} delay={i * 90}>
-                <Logo k={s.logo} />
-                <div>
-                  <h3>{s.school}</h3>
-                  <p>{s.degree}</p>
-                  <p className="when">{s.when}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
+      <section className="container ph-section">
+        <h2 className="ph-h2">{ex.educationTitle}</h2>
+        <ul className="pp-schools">
+          {ex.schools.map((s, i) => (
+            <Reveal as="li" key={s.school} delay={i * 90}>
+              <Logo k={s.logo} />
+              <div>
+                <h3>{s.school}</h3>
+                <p>{s.degree}</p>
+                <p className="pp-muted">{s.when}</p>
+              </div>
+            </Reveal>
+          ))}
+        </ul>
       </section>
 
-      <section className="container next-link">
-        <Link href="/projects" className="btn btn-primary">Next: Projects →</Link>
-      </section>
-    </>
+      <NextRow href="/projects" label="Projects" />
+    </div>
   );
 }

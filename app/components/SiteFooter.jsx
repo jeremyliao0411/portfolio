@@ -8,7 +8,6 @@ export default function SiteFooter() {
         <div>
           <strong>{profile.fullName}</strong>
           <p>{footer.built}</p>
-          <p>{footer.credits}</p>
         </div>
         <nav aria-label="Footer">
           {nav.map((n) => <Link key={n.href} href={n.href}>{n.label}</Link>)}

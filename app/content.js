@@ -19,12 +19,6 @@ export const nav = [
   { label: "Contact", href: "/contact" },
 ];
 
-// Background photos: Wikimedia Commons, CC0 / public domain (see public/bg/CREDITS.md).
-export const photos = {
-  port: { src: "/bg/port.jpg", alt: "Container ship being loaded at a port at night" },
-  lights: { src: "/bg/lights.jpg", alt: "Light trails on a highway at night" },
-};
-
 export const logos = {
   dinggo: { src: "/logos/dinggo.png", alt: "Ding-go logo" },
   gournay: { src: "/logos/gournay.png", alt: "Gournay Consulting logo" },
@@ -116,7 +110,6 @@ export const experience = {
   banner: {
     title: "Experience",
     sub: "Where I learned to turn data into decisions people act on.",
-    photo: "port",
   },
   workTitle: "Work",
   jobs: [
@@ -204,7 +197,6 @@ export const contact = {
   banner: {
     title: "Contact",
     sub: "In Los Angeles until December 2026, then in Taiwan from January 2027.",
-    photo: "lights",
   },
   title: "Let’s talk.",
   body: "If you’re building a team in Taiwan, I’d be glad to hear what you’re working on and where I might help. Email is the fastest way to reach me.",
@@ -212,5 +204,4 @@ export const contact = {
 
 export const footer = {
   built: "Designed and built with AI-assisted coding. Every number checked against the source data.",
-  credits: "Background photos: Wikimedia Commons (CC0).",
 };
