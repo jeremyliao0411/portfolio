@@ -1,5 +1,5 @@
 // All site copy lives here. Every number must match the resume and the fact files in
-// ~/Desktop/Job search/resume facts/<company>/ — change wording here, not in the layout.
+// ~/Jeremy/30-職涯/01-找工作/resume facts/<company>/ — change wording here, not in the layout.
 
 export const profile = {
   name: "Jeremy Liao",

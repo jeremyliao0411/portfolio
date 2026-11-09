@@ -2,8 +2,8 @@
 
 最後更新：2026-11-03（PST）
 範本：`/tsmc`（live：https://jeremyliao.vercel.app/tsmc，commit 92f05d7）
-原始檔：`~/Desktop/Project 2/notebooks/builders/tsmc-scrolly/template.html` + `data.json`
-第二個專案：`/mlb`（commit 913db0c），原始檔 `~/Developer/portfolio-builders/mlb-scrolly/`（`build_data.py` → `data.json`；`head.css.part` + `body.part` + 推圖 script → `template.html`）。之後的專案原始檔也放 `~/Developer/portfolio-builders/<專案>/`，不要放進公開的分析 repo。
+原始檔：`~/Jeremy/30-職涯/02-作品集專案/TSMC（Project 2）/notebooks/builders/tsmc-scrolly/template.html` + `data.json`
+第二個專案：`/mlb`（commit 913db0c），原始檔 `~/Jeremy/30-職涯/02-作品集專案/portfolio-builders/mlb-scrolly/`（`build_data.py` → `data.json`；`head.css.part` + `body.part` + 推圖 script → `template.html`）。之後的專案原始檔也放 `~/Jeremy/30-職涯/02-作品集專案/portfolio-builders/<專案>/`，不要放進公開的分析 repo。
 
 這份是**第一版就能用的規格**。換一個專案（MLB、之後的任何分析）時，照這份做：換內容、換資料，**版面、字體、顏色、動態、測試方法都不改**。
 
@@ -193,7 +193,7 @@ IntersectionObserver 只在「穿過中線」時觸發；一次跳很遠（End �
 ## 8. 文字規則
 
 - **第一人稱「I」**，像 business analyst 跟主管解釋：我發現什麼 → 為什麼選這個方法 → 結果代表什麼。不用死板的報告語氣。
-- 每個數字都要對得上履歷和 `~/Desktop/Job search/resume facts/<公司或專案>/`。不確定的數字不放。
+- 每個數字都要對得上履歷和 `~/Jeremy/30-職涯/01-找工作/resume facts/<公司或專案>/`。不確定的數字不放。
 - 比喻要跟資料同單位，不可以偷渡沒驗證過的原因。
 - 草稿句子用 `.draft`（琥珀虛線框）標出來，給 Jeremy 確認後才拿掉框。他要能在面試時講出每一句。
 - 限制要寫：觀察資料只能講關聯、模型解釋不到的部分、資料修正。
@@ -239,7 +239,7 @@ IntersectionObserver 只在「穿過中線」時觸發；一次跳很遠（End �
 4. 作品集卡片（`app/content.js`）的封面用**深色**的圖（從頁面的某個圖表狀態 headless 截圖），不用白底圖。
 5. `npm run build` → `npx next start -p 8815 -H 127.0.0.1` 本機看。
 6. commit 用 Jeremy 的身分，**不加 Co-Authored-By**。
-7. Jeremy 自己 push：`git -C ~/Developer/portfolio push origin main`，Vercel 自動上線。
+7. Jeremy 自己 push：`git -C ~/Jeremy/30-職涯/02-作品集專案/portfolio push origin main`，Vercel 自動上線。
 8. curl 確認 live 頁 200 + 內容是新的。
 
 ---
